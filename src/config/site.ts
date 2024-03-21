@@ -3,7 +3,8 @@ import { TWITTER_HANDLE } from './constants';
 
 export const siteConfig: SiteConfig = {
   name: 'Front End Platform Engineering',
-  description: 'Digital home for front end platform engineering.',
+  description:
+    'Digital hub for the changing landscape of front end platform engineering.',
   url: 'https://frontendplatform.dev',
   ogImage: '',
   links: {
