@@ -1,0 +1,21 @@
+---
+import { Input } from '../ui/input';
+import { buttonVariants } from '../ui/button';
+import { cn } from '@/lib/utils';
+---
+
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/frontendplatform"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/frontendplatform', 'popupwindow')"
+  class="embeddable-buttondown-form flex gap-2"
+>
+  <Input type="email" name="email" placeholder="sign@me.up.com" required />
+
+  <input
+    type="submit"
+    value="Subscribe"
+    class={cn(buttonVariants({ variant: 'default', size: 'md' }))}
+  />
+</form>

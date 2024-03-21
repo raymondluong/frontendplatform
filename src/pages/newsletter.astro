@@ -1,0 +1,35 @@
+---
+import NewsletterForm from '@/components/forms/newsletter-form.astro';
+import MainLayout from '@/layouts/main-layout.astro';
+import { siteConfig } from '@/config/site';
+import { buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+---
+
+<!-- todo: make 2 column grid layout, show past editions -->
+<MainLayout
+  title="Subscribe"
+  description="Our monthly curated digest dedicated to the changing landscape of front end platform engineering, featuring the latest news, articles and resources in languages, frameworks, developer experience, tooling, design systems, accessibility, testing, and more."
+  mainClass="container py-10"
+>
+  <section class="space-y-5 max-w-[50%]">
+    <h1 class="font-heading text-4xl">Subscribe</h1>
+    <p class="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+      Our monthly curated digest dedicated to the changing landscape of front
+      end platform engineering, featuring the latest news, articles and
+      resources in languages, frameworks, developer experience, tooling, design
+      systems, accessibility, testing, and more.
+    </p>
+
+    <NewsletterForm />
+
+    <a
+      href={siteConfig.links.archive}
+      target="_blank"
+      rel="noreferrer"
+      class={cn(buttonVariants({ variant: 'outline', size: 'md' }))}
+    >
+      View past editions
+    </a>
+  </section>
+</MainLayout>

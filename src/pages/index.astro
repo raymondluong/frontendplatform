@@ -1,0 +1,145 @@
+---
+import { buttonVariants } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { siteConfig } from '@/config/site';
+import MainLayout from '@/layouts/main-layout.astro';
+import { cn } from '@/lib/utils';
+import { Icon } from 'astro-icon/components';
+import NewsletterForm from '@/components/forms/newsletter-form.astro';
+---
+
+<MainLayout title="Front End Platform Engineering">
+  <section class="space-y-6 pb-12 pt-16 lg:py-28">
+    <div
+      class="container flex max-w-[72rem] flex-col items-center gap-5 text-center"
+    >
+      <h1
+        class="font-heading text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl !leading-[1.1] text-balance"
+      >
+        The digital hub for<br />
+        <span class="text-gradient_indigo-purple"
+          >Front End Platform Engineering</span
+        >
+      </h1>
+
+      <p
+        class="max-w-[50rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 text-balance"
+      >
+        Explore the world of front end platform engineering. Stay up to date
+        with the changing front end ecosystem.
+      </p>
+
+      <div class="flex justify-center space-x-2 md:space-x-4">
+        <a
+          href="/newsletter"
+          class={cn(buttonVariants({ variant: 'default', size: 'lg' }))}
+        >
+          Subscribe to our newsletter
+        </a>
+        <a
+          href={siteConfig.links.twitter}
+          target="_blank"
+          rel="noreferrer"
+          class={cn(buttonVariants({ variant: 'outline', size: 'lg' }))}
+        >
+          <Icon name="twitter" class="mr-2 size-5" />
+          Follow us on Twitter
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="features"
+    class="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24"
+  >
+    <div
+      class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center"
+    >
+      <h2 class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+        Explore
+      </h2>
+    </div>
+    <div
+      class="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3"
+    >
+      <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+        <div class="flex flex-col justify-between rounded-md p-5">
+          <div class="space-y-4">
+            <h3 class="font-bold">What is Front End Platform Engineering?</h3>
+            <p class="text-sm text-muted-foreground">
+              Discover what front end platform engineering is and why it's
+              important.
+            </p>
+            <button
+              class={cn(buttonVariants({ variant: 'outline', size: 'sm' }))}
+              disabled>Coming soon</button
+            >
+          </div>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+        <div class="flex flex-col justify-between rounded-md p-5">
+          <div class="space-y-4">
+            <h3 class="font-bold">
+              The Path to Front End Platform Engineering
+            </h3>
+            <p class="text-sm text-muted-foreground">
+              Learn the skills and tools you need to become a front end platform
+              engineer.
+            </p>
+            <button
+              class={cn(buttonVariants({ variant: 'outline', size: 'sm' }))}
+              disabled>Coming soon</button
+            >
+          </div>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+        <div class="flex flex-col justify-between rounded-md p-5">
+          <div class="space-y-4">
+            <h3 class="font-bold">
+              Front End Platform Engineering Specializations
+            </h3>
+            <p class="text-sm text-muted-foreground">
+              Explore the different areas of front end platform engineering and
+              find the specialization that's right for you.
+            </p>
+            <button
+              class={cn(buttonVariants({ variant: 'outline', size: 'sm' }))}
+              disabled>Coming soon</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="open-source" class="container py-8 md:py-12 lg:py-28">
+    <div
+      class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center"
+    >
+      <h2 class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+        Subscribe
+      </h2>
+      <p
+        class="max-w-[75%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+      >
+        Our monthly curated digest dedicated to the changing landscape of front
+        end platform engineering, featuring the latest news, articles and
+        resources in languages, frameworks, developer experience, tooling,
+        design systems, accessibility, testing, and more.
+      </p>
+
+      <NewsletterForm />
+      <a
+        href={siteConfig.links.archive}
+        target="_blank"
+        rel="noreferrer"
+        class={cn(buttonVariants({ variant: 'ghost', size: 'md' }))}
+      >
+        View past editions
+      </a>
+    </div>
+  </section>
+</MainLayout>
