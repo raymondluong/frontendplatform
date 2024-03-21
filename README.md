@@ -2,7 +2,7 @@
 
 ## Description
 
-Website for frontend-platform.com
+Website for frontendplatform.dev.
 
 ## Credits
 
