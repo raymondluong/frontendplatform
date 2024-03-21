@@ -1,5 +1,5 @@
 import type { NavMenuConfig } from '@/types';
-import { TWITTER_HANDLE } from './constants';
+import { siteConfig, twitterHandle } from './site';
 
 export const navMenuConfig: NavMenuConfig = {
   infosNav: [
@@ -12,8 +12,8 @@ export const navMenuConfig: NavMenuConfig = {
           description: "Take a closer look at the project's features.",
         },
         {
-          title: `Twitter @${TWITTER_HANDLE}`,
-          href: `https://twitter.com/${TWITTER_HANDLE}`,
+          title: `Twitter @${twitterHandle}`,
+          href: siteConfig.links.twitter,
           description: 'Follow us to get the latest updates and news.',
           external: true,
         },
