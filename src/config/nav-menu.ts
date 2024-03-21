@@ -17,12 +17,6 @@ export const navMenuConfig: NavMenuConfig = {
           description: 'Follow us to get the latest updates and news.',
           external: true,
         },
-        {
-          title: 'Source Code',
-          href: 'https://github.com/mickasmt/astro-nomy',
-          description: "You want to star the repository ? Let's get started!",
-          external: true,
-        },
       ],
     },
   ],

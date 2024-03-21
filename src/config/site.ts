@@ -4,8 +4,8 @@ import { TWITTER_HANDLE } from './constants';
 export const siteConfig: SiteConfig = {
   name: 'Front End Platform Engineering',
   description: 'Digital home for front end platform engineering.',
-  url: 'https://astro-nomy.vercel.app',
-  ogImage: 'https://astro-nomy.vercel.app/og.jpg',
+  url: 'https://frontendplatform.dev',
+  ogImage: '',
   links: {
     twitter: `https://twitter.com/${TWITTER_HANDLE}`,
     github: '',
