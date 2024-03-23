@@ -1,6 +1,6 @@
 import type { SiteConfig } from '@/types';
 
-export const twitterHandle = 'frontendplatform';
+export const twitterHandle = 'fe_platform';
 export const mainUrl = 'https://frontendplatform.dev';
 
 export const siteConfig: SiteConfig = {
