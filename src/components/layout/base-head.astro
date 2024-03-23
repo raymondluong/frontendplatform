@@ -1,7 +1,7 @@
 ---
-import { siteConfig } from "@/config/site";
-import "@/styles/globals.css";
-import { ViewTransitions } from "astro:transitions";
+import { siteConfig } from '@/config/site';
+import '@/styles/globals.css';
+import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -14,7 +14,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const {
   title,
   description = siteConfig.description,
-  image = "/og.jpg",
+  image = '/og.jpg',
 } = Astro.props;
 ---
 
@@ -55,32 +55,48 @@ const {
 <meta property="twitter:description" content={description} />
 <!-- <meta property="twitter:image" content={new URL(image, Astro.url)} /> -->
 
+<!-- Google tag (gtag.js) -->
+<script
+  is:inline
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-WW6FF68QKD"></script>
+<script is:inline type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW6FF68QKD');
+</script>
+
 <!-- Dark mode with prevent flickering flash between navigations -->
 <script is:inline>
-const setDarkMode = () => {
-  const theme = (() => {
-    if (
-      typeof localStorage !== "undefined" &&
-      localStorage.getItem("theme")
-    ) {
-      return localStorage.getItem("theme");
-    }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  })();
+  const setDarkMode = () => {
+    const theme = (() => {
+      if (
+        typeof localStorage !== 'undefined' &&
+        localStorage.getItem('theme')
+      ) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+      }
+      return 'light';
+    })();
 
-  if (theme === "light") {
-    document.documentElement.classList.remove("dark");
-  } else {
-    document.documentElement.classList.add("dark");
-  }
-  window.localStorage.setItem("theme", theme);
-};
+    if (theme === 'light') {
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+    }
+    window.localStorage.setItem('theme', theme);
+  };
 
-setDarkMode();
-document.addEventListener("astro:after-swap", setDarkMode);
+  setDarkMode();
+  document.addEventListener('astro:after-swap', setDarkMode);
 </script>
 
 <ViewTransitions />
