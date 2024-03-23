@@ -1,6 +1,6 @@
 ---
 title: 'Front End Platform Engineering Specializations'
-description: "Explore the different areas of front end platform engineering and find the specialization that's right for you."
+description: 'Explore the wide array of interconnected specializations, such as design systems, developer experience (DX), build tooling, and more.'
 pubDate: 'Jul 08 2022'
 coverImage: '/blog-placeholder-4.jpg'
 category: 'engineering'

@@ -68,14 +68,14 @@ export const navMenuConfig: NavMenuConfig = {
     //   title: 'About',
     //   href: '/about',
     // },
-    // {
-    //   title: 'Blog',
-    //   href: '/blog',
-    // },
-    // {
-    //   title: 'Newsletter',
-    //   href: '/newsletter',
-    // },
+    {
+      title: 'Blog',
+      href: '/blog',
+    },
+    {
+      title: 'Newsletter',
+      href: '/newsletter',
+    },
     // {
     //   title: 'Contact',
     //   href: '/contact',
