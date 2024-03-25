@@ -1,7 +1,7 @@
 ---
 title: 'What is Front End Platform Engineering?'
 description: "Discover what front end platform engineering is and why it's important."
-pubDate: 'Jul 08 2022'
+pubDate: 'Mar 24, 2024'
 coverImage: '/blog-placeholder-3.jpg'
 category: 'engineering'
 ---
