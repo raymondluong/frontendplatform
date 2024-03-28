@@ -2,7 +2,7 @@
 title: 'Front End Platform Engineering Specializations'
 description: 'Explore the wide array of interconnected specializations, such as design systems, infrastructure, and more.'
 pubDate: 'Mar 24, 2024'
-coverImage: '/blog-placeholder-4.jpg'
+coverImage: '/blog-placeholder-5.jpg'
 category: 'engineering'
 ---
 
