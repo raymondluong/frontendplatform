@@ -30,19 +30,16 @@ import NewsletterForm from '@/components/forms/newsletter-form.astro';
 
       <div class="flex justify-center space-x-2 md:space-x-4">
         <a
-          href="/newsletter"
+          href="/blog"
           class={cn(buttonVariants({ variant: 'default', size: 'lg' }))}
         >
-          Subscribe to our newsletter
+          Learn more
         </a>
         <a
-          href={siteConfig.links.twitter}
-          target="_blank"
-          rel="noreferrer"
+          href="/newsletter"
           class={cn(buttonVariants({ variant: 'outline', size: 'lg' }))}
         >
-          <Icon name="twitter" class="mr-2 size-5 hidden md:block" />
-          Follow us on Twitter
+          Subscribe to our newsletter
         </a>
       </div>
     </div>
