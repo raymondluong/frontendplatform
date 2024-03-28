@@ -159,3 +159,15 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.blue-dark {
+  color: #195c93;
+}
+
+.blue-medium {
+  color: #2bb6ee;
+}
+
+.blue-light {
+  color: #72d6ff;
+}
