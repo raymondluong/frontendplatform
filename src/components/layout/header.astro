@@ -1,7 +1,6 @@
 ---
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
-import { Icon } from 'astro-icon/components';
 
 type Props = {
   className?: string;
@@ -37,7 +36,7 @@ const { className } = Astro.props;
       class="absolute top-1/2 left-1/2 -translate-x-4 -translate-y-4 md:hidden"
     >
       <a href="/" aria-label="Front End Platform Engineering homepage">
-        <Icon name="logo-outline" class="size-8" />
+        <img src="/logo-transparent.png" alt="logo" class="w-8 h-8" />
       </a>
     </div>
 
