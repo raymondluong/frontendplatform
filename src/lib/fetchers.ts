@@ -33,3 +33,11 @@ export async function getGuides() {
 
   return guides;
 }
+
+export async function getEmails() {
+  const emails = (await getCollection("emails")).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
+
+  return emails;
+}

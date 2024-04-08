@@ -181,6 +181,22 @@ declare module 'astro:content' {
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 };
+"emails": {
+"february-2024.md": {
+	id: "february-2024.md";
+  slug: "february-2024";
+  body: string;
+  collection: "emails";
+  data: InferEntrySchema<"emails">
+} & { render(): Render[".md"] };
+"march-2024.md": {
+	id: "march-2024.md";
+  slug: "march-2024";
+  body: string;
+  collection: "emails";
+  data: InferEntrySchema<"emails">
+} & { render(): Render[".md"] };
+};
 "guides": {
 "build-blog-using-astro-mdx.mdx": {
 	id: "build-blog-using-astro-mdx.mdx";

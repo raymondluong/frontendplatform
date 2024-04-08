@@ -1,12 +1,12 @@
 ---
 import NewsletterForm from '@/components/forms/newsletter-form.astro';
 import MainLayout from '@/layouts/main-layout.astro';
-import { siteConfig } from '@/config/site';
-import { buttonVariants } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { getEmails } from '@/lib/fetchers';
+
+const emails = await getEmails();
+console.log(emails);
 ---
 
-<!-- todo: make 2 column grid layout, show past editions -->
 <MainLayout
   title="Subscribe"
   description="Our monthly curated digest dedicated to the changing landscape of front end platform engineering, featuring the latest news, articles and resources in languages, frameworks, developer experience, tooling, design systems, accessibility, testing, and more."
@@ -22,14 +22,19 @@ import { cn } from '@/lib/utils';
     </p>
 
     <NewsletterForm />
-
-    <a
-      href={siteConfig.links.archive}
-      target="_blank"
-      rel="noreferrer"
-      class={cn(buttonVariants({ variant: 'outline', size: 'md' }))}
-    >
-      View past editions
-    </a>
+  </section>
+  <section class="space-y-2">
+    <h2 class="font-heading text-2xl mt-10">Past Editions</h2>
+    <ul>
+      {
+        emails.map((email) => (
+          <li>
+            <a href={`/newsletter/${email.slug}`} class="hover:underline">
+              {email.data.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </section>
 </MainLayout>
