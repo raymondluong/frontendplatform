@@ -37,7 +37,6 @@ export type SiteConfig = {
     twitter: string;
     github: string;
     newsletter: string;
-    archive: string;
   };
 };
 

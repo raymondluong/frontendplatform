@@ -13,6 +13,5 @@ export const siteConfig: SiteConfig = {
     twitter: `https://twitter.com/${twitterHandle}`,
     github: '',
     newsletter: 'https://buttondown.email/frontendplatform',
-    archive: 'https://buttondown.email/frontendplatform/archive/',
   },
 };
