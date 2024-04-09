@@ -42,7 +42,7 @@ const guides = defineCollection({
 const emails = defineCollection({
   schema: z.object({
     title: z.string(),
-    // todo: description: z.string(),
+    description: z.string(),
     pubDate: z
       .string()
       .or(z.date())

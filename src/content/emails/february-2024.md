@@ -1,5 +1,6 @@
 ---
 title: '🧪 February 2024: React Labs, Storybook 8 preview, JS bloat, and a $104k bill'
+description: 'The first edition of Front End Platform Monthly, featuring React Labs, Storybook 8 preview, JS bloat, a $104k bill, and more.'
 pubDate: 'Feb 29, 2024'
 ---
 

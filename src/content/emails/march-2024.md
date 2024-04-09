@@ -1,5 +1,6 @@
 ---
 title: '📖 March 2024: Storybook 8, Interaction to Next Paint, Rolldown, JSR'
+description: 'March edition of Front End Platform Monthly, featuring Storybook 8, Interaction to Next Paint, Rolldown, JSR, and more.'
 pubDate: 'Mar 30, 2024'
 ---
 

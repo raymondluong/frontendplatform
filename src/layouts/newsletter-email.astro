@@ -8,10 +8,10 @@ import MainLayout from './main-layout.astro';
 type Props = CollectionEntry<'emails'>;
 
 const slug = Astro.props.slug;
-const { title } = Astro.props.data;
+const { title, description } = Astro.props.data;
 ---
 
-<MainLayout title={title} description={'todo'}>
+<MainLayout title={title} description={description}>
   <div class="relative container max-w-screen-md py-10">
     <a
       href="/newsletter"
