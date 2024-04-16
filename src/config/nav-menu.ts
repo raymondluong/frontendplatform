@@ -76,9 +76,9 @@ export const navMenuConfig: NavMenuConfig = {
       title: 'Newsletter',
       href: '/newsletter',
     },
-    // {
-    //   title: 'Contact',
-    //   href: '/contact',
-    // },
+    {
+      title: 'Tooling',
+      href: '/tooling',
+    },
   ],
 };

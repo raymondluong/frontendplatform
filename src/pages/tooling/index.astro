@@ -1,0 +1,24 @@
+---
+import { ToolingPageContent } from '@/components/tooling/tooling-page-content';
+import { Input } from '@/components/ui/input';
+import MainLayout from '@/layouts/main-layout.astro';
+---
+
+<MainLayout
+  title="Tooling Landscape"
+  description="Overview of front end tooling"
+  mainClass="container py-10"
+>
+  <section class="space-y-5">
+    <h1 class="text-4xl font-bold">Front End Platform Tooling</h1>
+    <p>
+      Learn about the various tools and technologies in the front end platform
+      ecosystem that are available to help you build, test, and deploy your
+      applications.
+    </p>
+    <ToolingPageContent client:load />
+    <p class="text-sm">
+      Last updated: <time datetime="2024-04">April 2024</time>
+    </p>
+  </section>
+</MainLayout>
