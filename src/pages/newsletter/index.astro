@@ -9,31 +9,32 @@ const emails = await getEmails();
 <MainLayout
   title="Subscribe"
   description="Our monthly curated digest dedicated to the changing landscape of front end platform engineering, featuring the latest news, articles and resources in languages, frameworks, developer experience, tooling, design systems, accessibility, testing, and more."
-  mainClass="container py-10"
 >
-  <section class="space-y-5 lg:max-w-[60%]">
-    <h1 class="font-heading text-4xl">Subscribe</h1>
-    <p class="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-      Our monthly curated digest dedicated to the changing landscape of front
-      end platform engineering, featuring the latest news, articles and
-      resources in languages, frameworks, developer experience, tooling, design
-      systems, accessibility, testing, and more.
-    </p>
+  <div class="container py-10">
+    <section class="space-y-5 lg:max-w-[60%]">
+      <h1 class="font-heading text-4xl">Subscribe</h1>
+      <p class="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+        Our monthly curated digest dedicated to the changing landscape of front
+        end platform engineering, featuring the latest news, articles and
+        resources in languages, frameworks, developer experience, tooling,
+        design systems, accessibility, testing, and more.
+      </p>
 
-    <NewsletterForm />
-  </section>
-  <section class="space-y-2">
-    <h2 class="font-heading text-2xl mt-10">Past Editions</h2>
-    <ul>
-      {
-        emails.map((email) => (
-          <li>
-            <a href={`/newsletter/${email.slug}`} class="hover:underline">
-              {email.data.title}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
+      <NewsletterForm />
+    </section>
+    <section class="space-y-2">
+      <h2 class="font-heading text-2xl mt-10">Past Editions</h2>
+      <ul>
+        {
+          emails.map((email) => (
+            <li>
+              <a href={`/newsletter/${email.slug}`} class="hover:underline">
+                {email.data.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
 </MainLayout>
