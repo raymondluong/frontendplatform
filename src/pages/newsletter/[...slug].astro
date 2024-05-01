@@ -1,4 +1,5 @@
 ---
+import { siteConfig } from '@/config/site';
 import NewsletterEmail from '@/layouts/newsletter-email.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
@@ -26,4 +27,20 @@ if (!slug || !post) {
 
 <NewsletterEmail {...post}>
   <Content />
+  <hr />
+  <p>That's all for now, folks! See you next month 👋</p>
+  <p>
+    Got thoughts or questions? I'd love to hear from you. My DMs <a
+      href={siteConfig.links.twitter}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      @fe_platform
+    </a>
+    are open.
+  </p>
+  <p>
+    Enjoyed what you've read? Do the ultimate good deed – pass it on to a friend
+    who'd love it as much as you did!
+  </p>
 </NewsletterEmail>
