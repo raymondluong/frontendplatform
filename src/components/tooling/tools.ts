@@ -326,4 +326,10 @@ export const designSystems = [
     url: 'https://mui.com/material-ui/',
     category: 'Design System',
   },
+  {
+    name: 'Mantine',
+    description: 'Build fully functional accessible web applications faster than ever – Mantine includes more than 100 customizable components and 50 hooks to cover you in any situation.',
+    url: 'https://mantine.dev/',
+    category: 'Design System',
+  }
 ];
