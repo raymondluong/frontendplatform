@@ -203,6 +203,13 @@ declare module 'astro:content' {
   collection: "emails";
   data: InferEntrySchema<"emails">
 } & { render(): Render[".md"] };
+"may-2024.md": {
+	id: "may-2024.md";
+  slug: "may-2024";
+  body: string;
+  collection: "emails";
+  data: InferEntrySchema<"emails">
+} & { render(): Render[".md"] };
 };
 "guides": {
 "build-blog-using-astro-mdx.mdx": {
